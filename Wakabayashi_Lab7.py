@@ -8,7 +8,9 @@ finalgrade = (prelim_grade*0.3333) + (midterm_grade*0.3333) + (finals_grade*0.33
 sumgrade = round(finalgrade)
 
 if (40 <= prelim_grade <= 100) or (40 <= midterm_grade <= 100) or (40 <= finals_grade <= 100):
-    if sumgrade >= 75 and sumgrade <= 77:
+    if sumgrade <= 74 and sumgrade >= 40:
+        print(f"Greetings {name} from {section}! Your Final Grade is {sumgrade} and Your GPA: 5.00")
+    elif sumgrade >= 75 and sumgrade <= 77:
         print(f"Greetings {name} from {section}! Your Final Grade is {sumgrade} and Your GPA: 3.00")
     elif sumgrade >= 78 and sumgrade <= 80:
         print(f"Greetings {name} from {section}! Your Final Grade is {sumgrade} and Your GPA: 2.75")
